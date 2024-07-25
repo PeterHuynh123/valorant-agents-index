@@ -8,47 +8,64 @@ body {
     background-color: #111111;
 }
 
+#container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: start;
+    align-items: start; */
+}
+
 #agent-display {
     /* display: flex;
     flex-direction: row; */
+    /* position: relative; */
     position: relative;
-    object-fit: fill;
-    height: 80vh; 
+    /* object-fit: fill; */
+    /* height: 50vh;  */
     /* padding-left: 0;    */
+    /* padding: 10px; */
 }
 
 
-#agent-bg, #agent-portrait {
-    position: absolute;
+#agent-display img {
+    /* position: absolute; */
+    /* width: 50%; */
     /* height: 70vh; */
+    background-color: beige;
 }
 
 
 #agent-bg {
-    z-index: -1;
+    /* z-index: -1;
     padding-left: -10vw;
-    height: 170vh;
+    height: 110vh;
     top: -30%;
     opacity: 0.3;
-    left: -13%;
+    left: -13%; */
+    width: 30%; 
 }
 
 #agent-portrait {
     z-index: 4;
-    height: 130vh;
+    height: 90vh;
 }
 
-#container {
-    display: flex;
-    /* flex-direction: row; */
-}
 
 /* #agent-dashboard {
     position: absolute;
     left: 50%;
 }    */
 
+#agent-dashboard {
+    background-color: pink;
+}
+
+#agent-desc {
+    background-color: aqua;
+}
 
 #icon {
     border: 3px solid floralwhite;
+    /* position: absolute; */
 }

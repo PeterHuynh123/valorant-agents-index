@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#agent-display {
+    /* background-color: antiquewhite; */
+    position: relative;
+    width: 100%;
+    flex: 2;
+}
+
+#agent-display img {
+    position: absolute;
+}
+
+#agent-portrait {
+    /* min-width: 100%;
+    max-width: 100%; */
+    width: auto;
+    height: auto;
+    height: 90vh;
+    top: 50px;
+    left: 50px;
+}
+
+#agent-bg {
+    top: 200px;
+    left: 200px;
+    height: 70vh;
+    /* background: red; */
+    /* width: 50%; */
+    opacity: 0.7;
+}
+
+#agent-dashboard {
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    flex: 1;
+    background-color: gainsboro;
+}
+
+#icon {
+    border: 3px solid floralwhite;
+    /* position: absolute; */
+}
