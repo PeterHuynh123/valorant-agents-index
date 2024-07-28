@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik+Scribble&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#agent-display {
+    /* background-color: antiquewhite; */
+    position: relative;
+    width: 100%;
+    flex: 2;
+}
+
+#agent-display {
+    img {
+    position: absolute;
+    }
+}
+
+#agent-portrait {
+    /* min-width: 100%;
+    max-width: 100%; */
+    width: auto;
+    height: auto;
+    height: 90vh;
+    top: 50px;
+    left: 50px;
+}
+
+#agent-bg {
+    top: 200px;
+    left: 200px;
+    height: 70vh;
+    /* background: red; */
+    /* width: 50%; */
+    opacity: 0.7;
+}
+
+#agent-dashboard {
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    flex: 2;
+    /* background-color: gainsboro; */
+}
+
+
+
+#agent-role-title {
+    display: flex;
+    flex-direction: row;
+    color:  #fef9f1;
+    font-family: 'Tungsten';
+    #icon {
+        border: 3px solid floralwhite;
+        height: 4vh;
+        padding: 1px;
+        /* position: absolute; */
+    }
+    #agent-role {
+        padding-left: 10px;
+        font-size: 38px;
+        margin: 0;
+    }
+}
+
+#agent-name {
+    color: #fef9f1;
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 200px;
+}
+
+#role-n-abilities {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+}
+
+#abilities {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    margin-left: 150px;
+
+    *{
+        transition-duration: 100ms;
+        padding: 5px;
+    }
+
+    *:hover {
+        transform: scale(1.03)
+    }
+}
+
+
+#agent-desc {
+    font: 'Tungsten';
+    font-size: larger;
+}
+
+
+\
+
