@@ -1,42 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Valorant Agents Index</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="container">
-        
-        <div id="agent-display">
-            <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/background.png" alt="" id="agent-bg">
-            <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/fullportrait.png" alt="" id="agent-portrait">
-        </div>
-        <div id="agent-dashboard">
-            <div id="agent-role-title">
-                <img src="https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png  " alt="" id="icon">
-                <div>
-                    <div id="role-n-abilities">
-                        <h1 id="agent-role">Initiator</h1>
-                        <div id="abilities">
-                            <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability1/displayicon.png" alt="" id="ab1">
-                            <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability2/displayicon.png" alt="" id="ab2">
-                            <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/grenade/displayicon.png" alt="" id="ab3">
-                            <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ultimate/displayicon.png" alt="" id="ab4">
-                        </div>
-                    </div>
-                    <h1 id="agent-name">GEKKO</h1>
-                    <p id="agent-desc">Gekko the Angeleno leads a tight-knit crew of calamitous creatures. His buddies bound forward, scattering enemies out of the way, with Gekko chasing them down to regroup and go again.</p>
-                </div> 
+      <div id="agent-display">
+        <img
+          src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/background.png"
+          alt=""
+          id="agent-bg"
+        />
+        <img
+          src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/fullportrait.png"
+          alt=""
+          id="agent-portrait"
+        />
+      </div>
+      <div id="agent-dashboard">
+        <div id="agent-role-title">
+          <img
+            src="https://media.valorant-api.com/agents/roles/1b47567f-8f7b-444b-aae3-b0c634622d10/displayicon.png  "
+            alt=""
+            id="icon"
+          />
+          <div>
+            <div id="role-n-abilities">
+              <h1 id="agent-role">Initiator</h1>
+              <div id="abilities">
+                <img
+                  src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability1/displayicon.png"
+                  alt=""
+                  id="ab1"
+                />
+                <img
+                  src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ability2/displayicon.png"
+                  alt=""
+                  id="ab2"
+                />
+                <img
+                  src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/grenade/displayicon.png"
+                  alt=""
+                  id="ab3"
+                />
+                <img
+                  src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/abilities/ultimate/displayicon.png"
+                  alt=""
+                  id="ab4"
+                />
+              </div>
             </div>
+            <h1 id="agent-name">GEKKO</h1>
+            <p id="agent-desc">
+              Gekko the Angeleno leads a tight-knit crew of calamitous
+              creatures. His buddies bound forward, scattering enemies out of
+              the way, with Gekko chasing them down to regroup and go again.
+            </p>
+          </div>
         </div>
+
+        <!-- <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">1</li>
+              <li class="glide__slide">2</li>
+            </ul>
+          </div>
+
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              prev
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              next
+            </button>
+          </div>
+        </div> -->
+
+        <div id="agents-container">
+          <h1>Agents</h1>
+
+          <ul id="agents-grid">
+            <!-- dynamically render agents into this container -->
+            <!-- <li>
+                        <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/fullportrait.png" alt="" width="300">
+                    </li>
+                    <li>
+                        <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/fullportrait.png" alt="" width="300">
+                    </li>
+                    <li>
+                        <img src="https://media.valorant-api.com/agents/e370fa57-4757-3604-3648-499e1f642d3f/fullportrait.png" alt="" width="300">
+                    </li> -->
+          </ul>
+        </div>
+      </div>
     </div>
 
-    
-
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="web.js"></script>
-</body>
+  </body>
 </html>
 
 <!-- wefw = await fetch('api')

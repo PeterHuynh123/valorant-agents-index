@@ -7,7 +7,29 @@
 
 body {
     background-color: black;
+    color: #fef9f1;
 }
+
+.glide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .glide__slide {
+    text-align: center;
+    height: 150px;
+    line-height: 150px;
+    color: #fff;
+    background: rgb(136, 133, 133);
+    font-size: 1em;
+    font-weight: 900;
+  }
+  
+  .glide__slide[class*="active"] {
+    background: linear-gradient(-45deg, #ed145b, #7b31f4);
+  }
+  
 
 #container {
     display: flex;
@@ -110,6 +132,17 @@ body {
     font-size: larger;
 }
 
+#agents-container {
+    outline: 1px solid red;
+}
 
-\
+
+#agents-grid {
+    display: inline-grid;
+
+    li {
+        list-style: none;
+        border: 1px solid white;
+    }
+}
 
