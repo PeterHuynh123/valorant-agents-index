@@ -33,18 +33,18 @@ body {
     max-width: 100%; */
     width: auto;
     height: auto;
-    height: 90vh;
-    top: 50px;
-    left: 50px;
+    height: 600px;
+    top: 70px;
+    left: 210px;
 }
 
 #agent-bg {
-    top: 200px;
-    left: 200px;
-    height: 70vh;
+    top: -120px;
+    left: 50px;
+    height: 800px;
     /* background: red; */
     /* width: 50%; */
-    opacity: 0.7;
+    opacity: 0.4;
 }
 
 #agent-dashboard {
@@ -63,9 +63,9 @@ body {
     color:  #fef9f1;
     font-family: 'Tungsten';
     #icon {
-        border: 3px solid floralwhite;
-        height: 4vh;
+        height: 30px;
         padding: 1px;
+        padding-top: 8px;
         /* position: absolute; */
     }
     #agent-role {
@@ -106,10 +106,22 @@ body {
 
 
 #agent-desc {
-    font: 'Tungsten';
+    font: 'Arial';
     font-size: larger;
+    padding-left: 10px;
 }
 
 
-\
+#current-desc-title {
+    padding-top: 20px;
+    font-family: 'Tungsten';
+    color: #ecde9d;
+    padding-left: 10px;
+    font-size: 50px;
+}
 
+#abilities-desc {
+    font-family: 'arial';
+
+    padding-left: 10px;
+}
